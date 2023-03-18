@@ -1,6 +1,17 @@
 ---
 import BtnSvelte from '../components/btn.svelte';
+import HeaderSvelte from '../components/Header.svelte';
+import Layout from '../layouts/Layout.astro';
+
+
+
+const paginaActual = 'about'
+
+export { HeaderSvelte };
 ---
 
-<h1 class="text-center p-3 bg-zinc-900 text-amber-700">Sobre Nosotros</h1>
+<Layout title="FomaTEC">
+<HeaderSvelte paginaActual={paginaActual}/>
+<h1 class="text-center p-3 bg-zinc-900 text-amber-700 mt-2">Sobre Nosotros</h1>
 <BtnSvelte client:load/>
+</Layout>

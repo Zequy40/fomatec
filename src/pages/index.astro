@@ -1,48 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import BtnSvelte from '../components/btn.svelte';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import BtnSvelte from "../components/btn.svelte";
+import HeaderSvelte from "../components/Header.svelte";
+import Section2 from "../components/section2.astro";
+import Section3 from "../components/section3.astro";
 
+const paginaActual = "home";
+
+export { HeaderSvelte };
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="FomaTEC">
+	<HeaderSvelte paginaActual={paginaActual} />
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="./about"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<img src="mbr-1465x1080.jpg" alt="">
+		<h1>Bienvenue a <span class="text-gradient">FomaTEC</span></h1>
+		<section>
+			<div class="head">
+				<h2>Créer un site internet n'a jamais été aussi simple</h2>
+				<p>Créer un site internet performant avec des fonctionnalités avancées et faciles à utiliser n'a jamais été aussi simple.
+					Avoir un site Web de qualité est la première étape vers la réussite digitale.</p>
+				<button>En savoir Plus</button>
+			</div>
+			<div class="contain">
+				<div class="cards">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+						<path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+					  </svg>
+				<h3>Accompagnement
+					& suivi continu</h3>
+					<p>Une équipe d'experts dédiés pour un site performant, à la hauteur de vos attentes.</p>
+			</div>
+			<div class="cards color">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+					<path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+				  </svg>
+				<h3>CHARTE GRAPHIQUE</h3>
+				<p>Quel que soit votre secteur d'activité, le design de votre site Internet doit être ciblé et fonctionnel. Nous le construisons en tenant compte de vos besoins spécifiques pour toucher un large public.</p>
+			</div>
+			<div class="cards">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
+					<path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+					<path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+				  </svg>
+				<h3>RESPONSIVE</h3>
+				<p>Tous nos sites web sont responsives, ce qui signifie qu'ils sont parfaitement adaptés à la navigation sur tous les appareils, qu'il s'agisse d'un smartphone ou d'une tablette (Apple ou Android).</p>
+			</div>
+			</div>
+			
+		</section>
+		<Section2></Section2>
+		
+		
 	</main>
-	
 </Layout>
-
+<div class="card">
+	<div class="cardContain">
+		<Card title="Gagner - du temps" cabezado="1" body="Avec notre expertise et notre savoir-faire, vous obtiendrez un site internet de qualité qui répond parfaitement à tous vos besoins. Vous souhaitez un site web qui soit à la fois esthétique et pratique ? "></Card>
+		<Card title="Viser PRO" cabezado="2" body="Nous prenons en compte tous les détails, des fonctionnalités à l'ergonomie, afin de vous fournir un site web qui réponde à vos objectifs. Notre équipe de professionnels qualifiés et notre méthodologie éprouvée garantissent des résultats de qualité. "></Card>
+		<Card title="Retour sur investissement" cabezado="3" body="Nous vous aidons à tirer le meilleur parti de votre site web en le rendant dynamique et engageant, ce qui augmente le taux de conversion et votre chiffre d'affaires. "></Card>
+	</div>
+	
+	</div>
+	<div class="section3">
+	<Section3></Section3>
+</div>
 <style>
 	main {
+		position: relative;
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 1200px;
 	}
 	h1 {
 		font-size: 3rem;
@@ -80,5 +110,87 @@ import BtnSvelte from '../components/btn.svelte';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+	section{
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center ;
+		flex-direction: column;
+		height: 100vh;
+	}
+	img{
+		position: absolute;
+		z-index: -1;
+		object-fit: cover;
+		background-image: url("");
+		background-color: rgba(255, 255, 255, 0.349); /* Aquí establecemos el color de fondo con una opacidad del 50% */ 
+		opacity: .3;
+		filter: blur(3px);
+	}
+	.head{
+		position:relative;
+		margin: 20px 0;
+		text-align: center;
+	}
+	.head h2{
+		font-size: 2rem;
+		padding: 2rem;
+		font-weight: bold;
+	}
+	.head p{
+		max-width: 50rem;
+		padding: 1rem;
+		font-size: 1.2rem;
+		color: rgb(95, 95, 95);
+	}
+	.head button{
+		padding: 1rem;
+		background-color: var(--accent);
+		color: var(--white-foma);
+		border-radius: 50px;
+	}
+
+	.contain{
+		display: grid;
+		gap: 1rem;
+		grid-auto-flow: dense;
+		grid-auto-rows: auto;
+		grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+		justify-content: center;
+		margin:  5rem 1rem;
+	}
+	.cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+		background-color:var(--white-foma);
+		height: 400px;
+		padding: 5rem 1.5rem 1.5rem 1.5rem;
+		border-radius: 0.625rem; 
+		
+	}
+	.color{
+		background-color: rgb(210, 210, 210);
+	}
+	svg{
+		transform: scale(3);
+		fill: var(--color-theme-2);
+	}
+	.card{
+		padding: 5rem;
+		
+		background-color: var(--color-theme-1);
+	}
+	.cardContain{
+		max-width: 1200px;
+		margin: auto;
+		display: flex;
+		gap: 2rem;
+	}.section3{
+		max-width: 1200px;
+		margin: auto;
+		
 	}
 </style>
