@@ -5,6 +5,8 @@ import BtnSvelte from "../components/btn.svelte";
 import HeaderSvelte from "../components/Header.svelte";
 import Section2 from "../components/section2.astro";
 import Section3 from "../components/section3.astro";
+import CardPro from "../components/CardPro.astro";
+import CardPas from "../components/CardPas.astro";
 
 const paginaActual = "home";
 
@@ -65,12 +67,22 @@ export { HeaderSvelte };
 	
 	</div>
 	<div class="section3">
-	<Section3></Section3>
+		<Section3></Section3>
+	
 </div>
-<style>
+	<CardPas></CardPas>
+	<div class="section3">
+	<CardPro title="1" body="Dans un marché toujours plus compétitif créer la différence professionnel deviens indispensable"></CardPro>
+	
+	<CardPro title="2" body="Nous vous accompagnons dans la conception, le développement et le lancement de votre site web, en veillant à ce qu'il soit convivial, intuitif et attrayant pour vos visiteurs.">
+		</CardPro>
+		
+	<CardPro title="3" body="Nous vous aidons également à mettre en place des stratégies de marketing numérique pour augmenter le trafic et les conversions."></CardPro>
+	</div>
+	<style>
 	main {
 		position: relative;
-		margin: auto;
+		margin: 5em auto;
 		padding: 1.5rem;
 		max-width: 1200px;
 	}
@@ -137,6 +149,7 @@ export { HeaderSvelte };
 		font-size: 2rem;
 		padding: 2rem;
 		font-weight: bold;
+		text-shadow: 3px 3px 6px rgb(95, 95, 95);
 	}
 	.head p{
 		max-width: 50rem;

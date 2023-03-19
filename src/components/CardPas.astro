@@ -1,0 +1,183 @@
+
+
+<section>
+    <img class="imgHead" src="mbr-1920x1280.jpg" alt="">
+    <div class="head">
+        <h2><span></span> Votre site Web en 3 étapes simples</h2>
+        
+      
+    </div>
+    <div class="contain">
+        <div class="cards">
+            <div class="chart">
+                <img class="img" src="fondRDV.png" alt="">
+                <div class="chartContain">
+                    <h2>1º</h2>
+                    <span>Semaine</span>
+                </div>
+            </div>
+            
+        <h3>Prenons rdv</h3>
+            <p>Un rdv avec un conseiller vous permettra d'examiner les besoins et service necessaire à votre activité</p>
+    </div>
+    <div class="cards">
+        <div class="chart">
+            <img class="img" src="fondRDV2.png" alt="">
+            <div class="chartContain">
+                <h2>2º</h2>
+                <span>Semaine</span>
+            </div>
+        </div>
+        <h3>
+            Maquette V1</h3>
+        <p>La maquette du site qui reflète votre activité ou le thème de votre site vous ai envoyé</p>
+    </div>
+    <div class="cards">
+        <div class="chart">
+            <img class="img" src="Inter.png" alt="">
+            <div class="chartContain">
+                <h2>2º</h2>
+                <span>Semaine</span>
+            </div>
+        </div>
+        <h3>Validation-Paiement-Maquette V2</h3>
+        <p>Personnalisation du modèle  :  sections et insertion de vos propres textes et images. </p>
+    </div>
+    <div class="cards">
+        <div class="chart">
+            <img class="img" src="PUBLIEZ.png" alt="">
+            <div class="chartContain">
+                <h2>3º</h2>
+                <span>Semaine</span>
+            </div>
+        </div>
+        <h3>VERSION FINAL</h3>
+        <p>C'est prêt ?  votre site est immédiatement disponible en ligne sous votre nom de domaine (adresse Web).</p>
+    </div>
+    </div>
+    
+</section>
+
+<style>
+    section{
+        position:relative;
+		width: 100%;
+        margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		margin-top: 10rem;
+	}
+	.imgHead{
+		position: absolute;
+		z-index: -1;
+		object-fit: contain;
+        width: 100%;
+		background-color: rgba(255, 255, 255, 0.349); /* Aquí establecemos el color de fondo con una opacidad del 50% */ 
+		opacity: .3;
+		filter: blur(3px);
+	}
+	.head{
+		position:relative;
+		margin: 20px 0;
+		text-align: center;
+	}
+	.head h2{
+		font-size: 3rem;
+		padding: 4rem;
+		text-shadow: 3px 3px 6px rgb(95, 95, 95);
+	}
+	.head p{
+		max-width: 50rem;
+		padding: 1rem;
+		font-size: 1.2rem;
+		color: rgb(95, 95, 95);
+	}
+	.head button{
+		padding: 1rem;
+		background-color: var(--accent);
+		color: var(--white-foma);
+		border-radius: 50px;
+	}
+
+	.contain{
+		display: grid;
+		gap: 1rem;
+		grid-auto-flow: dense;
+		grid-auto-rows: auto;
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+		justify-content: center;
+        padding: 5rem;
+		
+	}
+	.cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+		background-color:var(--white-foma);
+		height: 100%;
+		padding: 5rem 1.5rem 1.5rem 1.5rem;
+		border-radius: 0.625rem; 
+		
+	}
+    .cards h3{
+        color: var(--color-theme-1);
+        font-size: 1.2rem;
+        font-weight: bolder
+    }
+    .cards p{
+        color: rgb(95, 95, 95);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bolder
+    }
+    .chart{
+        position: relative;
+        width: 100%;
+
+    }
+    .img{
+        
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.349); /* Aquí establecemos el color de fondo con una opacidad del 50% */ 
+		opacity: .4;
+        z-index: 0;
+
+    }
+    .chartContain{
+        position: absolute;
+        top: -50px;
+        left: 0px;
+        display: flex;
+        gap: .3rem;
+    }
+    .chartContain span{
+	margin-right: 10px;
+	height: 100%;
+	background-color:var(--color-theme-2) ;
+    border-radius: 50px;
+    padding: .4rem;
+    color: var(--white-foma);
+}
+.chartContain h2{
+    font-size: 5rem;
+    font-weight: bold;
+}
+	.color{
+		background-color: rgb(210, 210, 210);
+	}
+	
+	.card{
+		padding: 5rem;
+		
+		background-color: var(--color-theme-1);
+	}
+    span{
+	margin-right: 10px;
+	height: 100%;
+	background-color:var(--color-theme-2) ;
+	border: 3px solid var(--color-theme-2);
+}
+</style>

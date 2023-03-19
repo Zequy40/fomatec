@@ -1,18 +1,6 @@
 <script lang="ts">
   export let paginaActual: string;
-  let showSubmenu = false;
-
-  function mostrarSubmenu() {
-    mostrandoSubmenu = true;
-  }
-
-  function ocultarSubmenu() {
-    mostrandoSubmenu = false;
-  }
-
-  let mostrandoSubmenu = false;
-
-
+  
 </script>
 
 <header>
@@ -67,14 +55,16 @@
 
 
 	nav {
+		position: fixed;
+		z-index: 1;
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
-		width: 2em;
-		height: 3em;
+		width: 3.3em;
+		height: 5em;
 		display: block;
 	}
 
@@ -86,7 +76,7 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
+		height: 5em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -102,7 +92,7 @@
 	}
 
 	li.active::before {
-		--size: 6px;
+		--size: 15px;
 		content: '';
 		width: 0;
 		height: 0;
@@ -120,7 +110,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
@@ -149,9 +139,9 @@
   } 
     nav ul li:hover > ul{
     opacity: 1;
-    top: 47px;
+    top: 80px;
     left: 0;
-    width: 150px;
+    width: 190px;
     height: 100%;
     display: flex;
     flex-direction: column;
